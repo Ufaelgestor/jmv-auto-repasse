@@ -9,6 +9,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { ShieldCheck, TrendingDown, Clock, MapPin, Menu, X, Car, ChevronLeft, ChevronRight, MessageCircle, Star, Award, Instagram, Facebook } from 'lucide-react';
 import FluidBackground from './components/FluidBackground';
+import PlaystationBackground from './components/PlaystationBackground';
 import GradientText from './components/GlitchText';
 import CustomCursor from './components/CustomCursor';
 import ArtistCard from './components/ArtistCard'; // Still imported but logic moved to Showcase
@@ -606,4 +607,11 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+const AppWithBackground = () => (
+  <>
+    <PlaystationBackground />
+    <App />
+  </>
+);
+
+export default AppWithBackground;
