@@ -135,7 +135,7 @@ const App: React.FC = () => {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-white/30 px-6 py-3 text-xs font-bold tracking-widest uppercase hover:bg-[#25D366] hover:border-[#25D366] transition-all duration-300 text-white cursor-pointer bg-black/40 backdrop-blur-md rounded-sm no-underline shadow-lg"
+            className="inline-flex items-center gap-2 border border-white/30 px-6 py-3 text-xs font-bold tracking-widest uppercase hover:bg-[#D62828] hover:border-[#D62828] transition-all duration-300 text-white cursor-pointer bg-black/40 backdrop-blur-md rounded-sm no-underline shadow-lg"
             data-hover="true"
           >
             <MessageCircle className="w-4 h-4" />
@@ -166,7 +166,7 @@ const App: React.FC = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item === 'Estoque' ? 'catalog' : item === 'Sobre' ? 'about' : 'contact')}
-                className="text-4xl font-heading font-bold text-white hover:text-[#25D366] transition-colors uppercase bg-transparent border-none"
+                className="text-4xl font-heading font-bold text-white hover:text-[#D62828] transition-colors uppercase bg-transparent border-none"
               >
                 {item}
               </button>
@@ -175,7 +175,7 @@ const App: React.FC = () => {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 bg-[#25D366] px-10 py-4 text-sm font-bold tracking-widest uppercase text-white rounded-sm shadow-lg shadow-green-900/50"
+              className="mt-8 bg-[#D62828] px-10 py-4 text-sm font-bold tracking-widest uppercase text-white rounded-sm shadow-lg shadow-red-900/50"
             >
               Falar no WhatsApp
             </a>
@@ -200,7 +200,7 @@ const App: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-[0.65rem] md:text-sm font-bold font-mono text-[#25D366] tracking-[0.2em] uppercase mb-6 bg-black/60 border border-white/10 px-6 py-2 rounded-full backdrop-blur-md shadow-lg"
+            className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-[0.65rem] md:text-sm font-bold font-mono text-[#D62828] tracking-[0.2em] uppercase mb-6 bg-black/60 border border-white/10 px-6 py-2 rounded-full backdrop-blur-md shadow-lg"
           >
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4" />
@@ -259,7 +259,7 @@ const App: React.FC = () => {
         </motion.div>
 
         {/* MARQUEE */}
-  <div className="absolute bottom-12 md:bottom-16 left-0 w-full py-3 md:py-4 bg-[#25D366] text-white z-20 overflow-hidden border-y border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+        <div className="absolute bottom-12 md:bottom-16 left-0 w-full py-3 md:py-4 bg-[#D62828] text-white z-20 overflow-hidden border-y border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
           <motion.div 
             className="flex w-fit will-change-transform"
             animate={{ x: "-50%" }}
@@ -287,11 +287,11 @@ const App: React.FC = () => {
            <div className="flex flex-col md:flex-row justify-between items-end px-2 md:px-4">
              <h2 className="text-4xl md:text-7xl font-heading font-bold uppercase leading-[0.9] drop-shadow-lg w-full md:w-auto mb-6 md:mb-0">
               OPORTUNIDADES <br/> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#25D366] to-white">PREMIUM</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D62828] to-white">PREMIUM</span>
             </h2>
              <div className="hidden md:block text-right">
                 <p className="text-gray-400 uppercase tracking-widest text-sm mb-2">Estoque Rotativo Diário</p>
-                <div className="h-1 w-full bg-[#25D366]"></div>
+                <div className="h-1 w-full bg-[#D62828]"></div>
             </div>
            </div>
         </div>
@@ -334,8 +334,8 @@ const App: React.FC = () => {
                     key={i} 
                     className="flex items-start gap-4 md:gap-6 group"
                   >
-                    <div className="p-3 md:p-4 rounded-md bg-white/5 border border-white/10 group-hover:border-[#25D366] transition-colors shrink-0">
-                      <feature.icon className="w-5 h-5 md:w-6 md:h-6 text-[#25D366]" />
+                    <div className="p-3 md:p-4 rounded-md bg-white/5 border border-white/10 group-hover:border-[#D62828] transition-colors shrink-0">
+                      <feature.icon className="w-5 h-5 md:w-6 md:h-6 text-[#D62828]" />
                     </div>
                     <div>
                       <h4 className="text-lg md:text-xl font-bold mb-1 font-heading text-white">{feature.title}</h4>
@@ -347,7 +347,7 @@ const App: React.FC = () => {
             </div>
 
             <div className="lg:col-span-7 relative h-[300px] md:h-[600px] w-full order-1 lg:order-2">
-              <div className="absolute inset-0 bg-[#25D366] rounded-sm -rotate-2 opacity-20 blur-sm" />
+              <div className="absolute inset-0 bg-[#D62828] rounded-sm -rotate-2 opacity-20 blur-sm" />
               <div className="relative h-full w-full rounded-sm overflow-hidden border border-white/10 group shadow-2xl">
                 <img 
                   src={IMAGES.SHOWROOM} 
@@ -358,7 +358,7 @@ const App: React.FC = () => {
                 
                 <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10">
                   <div className="flex gap-4 mb-4">
-                     <Award className="w-10 h-10 md:w-12 md:h-12 text-[#25D366]" />
+                     <Award className="w-10 h-10 md:w-12 md:h-12 text-[#D62828]" />
                   </div>
                   <div className="text-2xl md:text-5xl font-heading font-bold text-white">
                     LIDERANÇA EM REPASSE
@@ -383,8 +383,8 @@ const App: React.FC = () => {
                  { name: "Ana Paula Silva", role: "Cliente Final - SP", text: "Fiquei receosa de comprar online, mas o laudo cautelar me passou segurança. O carro chegou impecável, como nas fotos." },
                  { name: "Garage Imports", role: "Revenda - BH/MG", text: "Parceria sólida. Agilidade na documentação e carros que não dão dor de cabeça. Recomendo para quem quer escalar." }
                ].map((t, i) => (
-            <div key={i} className="bg-[#111] p-8 border border-white/10 rounded-sm hover:border-[#25D366] transition-colors group">
-              <div className="flex gap-1 mb-4 text-[#25D366]">
+                 <div key={i} className="bg-[#111] p-8 border border-white/10 rounded-sm hover:border-[#D62828] transition-colors group">
+                    <div className="flex gap-1 mb-4 text-[#D62828]">
                        {[1,2,3,4,5].map(s => <Star key={s} className="w-4 h-4 fill-current" />)}
                     </div>
                     <p className="text-gray-300 mb-6 leading-relaxed">"{t.text}"</p>
@@ -403,7 +403,7 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12 md:mb-16">
              <h2 className="text-4xl md:text-8xl font-heading font-bold text-white mb-6">
-               PRONTO PARA <br/><span className="text-[#25D366]">NEGOCIAR?</span>
+               PRONTO PARA <br/><span className="text-[#D62828]">NEGOCIAR?</span>
              </h2>
              <p className="text-gray-400 text-lg md:text-xl max-w-xl mx-auto">
                Nosso estoque é atualizado diariamente. Não perca a chance de garantir os melhores modelos com preço de repasse.
