@@ -200,7 +200,7 @@ const App: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-[0.65rem] md:text-sm font-bold font-mono text-[#25D366] tracking-[0.2em] uppercase mb-6 bg-black/60 border border-white/10 px-6 py-2 rounded-full backdrop-blur-md shadow-lg"
+            className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-[0.65rem] md:text-sm font-bold font-mono text-[#D62828] tracking-[0.2em] uppercase mb-6 bg-black/60 border border-white/10 px-6 py-2 rounded-full backdrop-blur-md shadow-lg"
           >
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4" />
@@ -259,7 +259,7 @@ const App: React.FC = () => {
         </motion.div>
 
         {/* MARQUEE */}
-  <div className="absolute bottom-12 md:bottom-16 left-0 w-full py-3 md:py-4 bg-[#25D366] text-white z-20 overflow-hidden border-y border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+        <div className="absolute bottom-12 md:bottom-16 left-0 w-full py-3 md:py-4 bg-[#D62828] text-white z-20 overflow-hidden border-y border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
           <motion.div 
             className="flex w-fit will-change-transform"
             animate={{ x: "-50%" }}
@@ -561,7 +561,7 @@ const App: React.FC = () => {
                     {selectedVehicle.price}
                   </p>
                   
-                  <span className="inline-block bg-[#25D366]/20 text-[#25D366] border border-[#25D366]/50 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-6">
+                  <span className="inline-block bg-[#D62828]/20 text-[#D62828] border border-[#D62828]/50 px-3 py-1 text-xs font-bold uppercase tracking-wider mb-6">
                     {selectedVehicle.fipeDifference}
                   </span>
                   
